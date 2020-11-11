@@ -6,6 +6,9 @@ os: linux
 # 언어(플랫폼)선택
 language: generic
 
+
+dist: Bionic
+
 # docker 환경 구성
 services:
   - docker
