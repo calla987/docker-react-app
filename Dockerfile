@@ -17,6 +17,6 @@ RUN npm run build
 # nginx run
 FROM nginx
 # port 80 Mapping (AWS환경 업로드시 필요)
-EXPOSE port    80
+EXPOSE 80
 COPY --from=builder /usr/src/app/build  /usr/share/nginx/html
 # ----------- End RunStage -----------
