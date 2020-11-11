@@ -2,7 +2,9 @@
 
 
 git config --global user.email "calla987@gmail.com" 
-git config --global user.name "VicnetCode"   
+
+git config --global user.name "VicnetCode"
+
 
 git init .
 git add README.md
