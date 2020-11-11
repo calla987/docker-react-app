@@ -1,6 +1,8 @@
 # sudo : 관리자 권한 찾기
 sudo: required
 
+os: linux
+
 # 언어(플랫폼)선택
 language: generic
 
