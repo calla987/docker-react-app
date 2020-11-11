@@ -6,7 +6,7 @@ FROM node:alpine as builder
 WORKDIR '/usr/src/app'
 COPY package.json .
 #종속성 생성
-RUN npm install
+RUN  npm install
 COPY ./ ./
 RUN npm run build
 # ----------- Start builderStage -----------

@@ -8,7 +8,7 @@ COPY package.json .
 #종속성 생성
 RUN npm install
 COPY ./ ./
-RUN npm run build
+RUN sudo npm run build
 # ----------- Start builderStage -----------
 
 
