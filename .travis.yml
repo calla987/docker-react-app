@@ -41,13 +41,12 @@ after_success:
 deploy:
   # s3,elasticbeanstalk,firebase
   provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_ACCESS_SECRET_KEY
+  #s3서비스에 생성된 bucket 명칭임
+  bucket: "elasticbeanstalk-us-east-2-840220611326"
   region: "us-east-2"
   app: "docker-react-app"
   env: "DockerReactApp-env"
-  #s3서비스에 생성된 bucket 명칭임
-  bucket_name: "eelasticbeanstalk-us-east-2-840220611326"
-  bucket_path: "docker-react-app"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_ACCESS_SECRET_KEY
