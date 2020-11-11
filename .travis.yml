@@ -32,6 +32,8 @@ script:
 # 테스트 성공후 할일
 after_success:
   - echo "Test Success"
+  -
+before_deploy: "echo 'ready? AWS!!! '"
 
 deploy:
   # s3,elasticbeanstalk,firebase
