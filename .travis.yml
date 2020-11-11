@@ -41,11 +41,10 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_ACCESS_SECRET_KEY
   #s3서비스에 생성된 bucket 명칭임
-  bucket_name: "elasticbeanstalk-us-east-2-840220611326"
-  bucket_path: "DockerReactApp-env"
+  bucket: "elasticbeanstalk-us-east-2-840220611326"
+  #bucket_path: "DockerReactApp-env"
   region: "us-east-2"
   app: "docker-react-app"
   env: "DockerReactApp-env"
-  skip_cleanup: true
   on:
     branch: master
