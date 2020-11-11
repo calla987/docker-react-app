@@ -23,7 +23,7 @@ services:
 # Script 를 실행 할수 있는 환경
 before_install:
   - echo "start Creating an image with dockfile."
-  - docker build -t calla987/docker-react-app -f Dockerfile .
+  - docker build -t calla987/docker-react-app -f Dockerfile.dev .
 
 # 실행할 Script(테스트 실행)
 script:
