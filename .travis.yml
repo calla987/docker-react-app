@@ -1,5 +1,5 @@
 # sudo : 관리자 권한 찾기
-sudo: required
+#sudo: required
 
 os: linux
 
