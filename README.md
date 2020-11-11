@@ -1,3 +1,16 @@
+
+# Git CMD
+
+git config --global user.email "calla987@gmail.com" 
+git config --global user.name "VicnetCode"   
+
+git init .
+git add README.md
+
+git commit -m "first commit"           
+git remote add orgin https://github.com/calla987/docker-react-app.git
+git push -u orgin master    
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
