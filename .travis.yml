@@ -38,8 +38,8 @@ before_deploy: "echo 'ready? AWS!!! '"
 deploy:
   # s3,elasticbeanstalk,firebase
   provider: elasticbeanstalk
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_ACCESS_SECRET_KEY
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_ACCESS_SECRET_KEY"
   #s3서비스에 생성된 bucket 명칭임
   bucket: "elasticbeanstalk-us-east-2-840220611326"
   #bucket_path: "DockerReactApp-env"
