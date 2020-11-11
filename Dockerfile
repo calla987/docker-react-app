@@ -12,7 +12,7 @@ RUN npm run build
 # ----------- Start builderStage -----------
 
 
-# ----------- End RunStage -----------
+# ----------- Enㅏd RunStage -----------
 #Step Run Stage
 # nginx run
 FROM nginx
