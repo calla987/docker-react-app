@@ -14,7 +14,7 @@ language: generic
 # Artful Aardvark (17.10)
 # Bionic Beaver (18.04)
 # ----------------------------
-dist: Bionic
+dist: xenial
 
 # docker 환경 구성
 services:
@@ -36,15 +36,17 @@ after_success:
 before_deploy: "echo 'ready? AWS!!! '"
 
 deploy:
+
   # s3,elasticbeanstalk,firebase
   provider: elasticbeanstalk
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_ACCESS_SECRET_KEY"
+  edge: true
   #s3서비스에 생성된 bucket 명칭임
-  bucket: "elasticbeanstalk-us-east-2-840220611326"
-  #bucket_path: "DockerReactApp-env"
+  bucket_name: "elasticbeanstalk-us-east-2-840220611326"
+  bucket_path: "DockerReactApp-env"
   region: "us-east-2"
   app: "docker-react-app"
   env: "DockerReactApp-env"
   on:
     branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_ACCESS_SECRET_KEY
