@@ -13,11 +13,6 @@ language: generic
 # Zesty Zapus (17.04)
 # Artful Aardvark (17.10)
 # Bionic Beaver (18.04)
-# Xenial Xerus (16.04)
-# Yakkety Yak (16.10)
-# Zesty Zapus (17.04)
-# Artful Aardvark (17.10)
-# Bionic Beaver (18.04)
 # ----------------------------
 dist: Bionic
 
@@ -48,5 +43,6 @@ deploy:
   region: "us-east-2"
   app: "docker-react-app"
   env: "DockerReactApp-env"
+  skip_cleanup: true
   on:
     branch: master
