@@ -9,6 +9,8 @@ services:
     volumes:
       - /usr/src/app/node_modules
       - ./:/usr/src/app
+    environment:
+      - CHOKIDAR_USEPOLLING=true #윈도우 터미널에서 reload가 안될때 필수!!!
     stdin_open: true
   tests:
     build:
